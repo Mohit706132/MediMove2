@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9FE2EA"
+    android:background="#9F83DB"
     android:backgroundTintMode="add"
     tools:context=".MainActivity">
 
@@ -16,23 +16,27 @@
         android:layout_marginTop="164dp"
         android:gravity="center"
         android:text="E-mail/Phone"
+        android:textColor="#212121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="409dp"
-        android:layout_height="41dp"
+        android:layout_width="405dp"
+        android:layout_height="84dp"
         android:layout_marginTop="4dp"
-        android:background="#C5F1F6"
+        android:background="#9E82DA"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="MediMove"
+        android:textColor="#424242"
         android:textColorHighlight="#FF9800"
         android:textColorLink="#FF5722"
-        android:textSize="34sp"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -41,13 +45,16 @@
         android:layout_marginTop="42dp"
         android:ems="10"
         android:hint="Password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHint="#00695C"
+        android:textColorHint="#000000"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -57,8 +64,11 @@
         android:layout_marginEnd="28dp"
         android:ems="10"
         android:hint="email/phone no."
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
+        android:textColorHint="#6A1B9A"
+        android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -70,6 +80,7 @@
         android:layout_marginTop="252dp"
         android:gravity="center"
         android:text="Password"
+        android:textColor="#212121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 

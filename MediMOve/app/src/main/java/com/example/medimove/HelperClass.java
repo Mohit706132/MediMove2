@@ -44,16 +44,16 @@ import com.google.firebase.database.PropertyName;
 //        this.password = password;
 //    }
 class HelperClass {
-    @PropertyName("name")
-    public String name;
+    @PropertyName("phone")
+    public String phone;
     @PropertyName("email")
     public String email;
     @PropertyName("username")
     public String username;
     @PropertyName("password")
     public String password;
-    public HelperClass(String name, String email, String username, String password) {
-        this.name=name;
+    public HelperClass(String phone, String email, String username, String password) {
+        this.phone=phone;
         this.email=email;
         this.username=username;
         this.password=password;
